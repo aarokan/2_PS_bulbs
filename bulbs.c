@@ -9,6 +9,18 @@ void print_bulb(int bit);
 int main(void)
 {
     // TODO
+    // get a message to encode
+    string message = get_string("Message: ");
+    
+    // get string length
+    int msgLength = strlen(message);
+    printf("\nMessage length : %i", msgLength);
+    printf("\n");
+
+    // loop through message
+        // convert character to a decimal
+        // convert decimal to binary
+        // print binary using print_bulb
 }
 
 void print_bulb(int bit)
