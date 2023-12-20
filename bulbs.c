@@ -14,13 +14,19 @@ int main(void)
     
     // get string length
     int msgLength = strlen(message);
-    printf("\nMessage length : %i", msgLength);
-    printf("\n");
 
     // loop through message
+    for (int i = 0; i < msgLength; i++ )
+    {
         // convert character to a decimal
+        printf("\ncurrent character = %c", message[i]);
+        int decimalEquivalent = message[i];
+        printf("\nconverted to decimal = %i", decimalEquivalent);
+        printf("\n");
+
         // convert decimal to binary
         // print binary using print_bulb
+    }
 }
 
 void print_bulb(int bit)
