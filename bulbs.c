@@ -6,6 +6,8 @@ const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
 
+int convertToBinary(int decimal);
+
 int main(void)
 {
     // TODO
@@ -25,6 +27,8 @@ int main(void)
         printf("\n");
 
         // convert decimal to binary
+        int binaryEquivalent = convertToBinary(decimalEquivalent);
+
         // print binary using print_bulb
     }
 }
@@ -41,4 +45,11 @@ void print_bulb(int bit)
         // Light emoji
         printf("\U0001F7E1");
     }
+}
+
+int convertToBinary(decimal)
+{
+    printf("decimal test = %i", decimal);
+
+    return 0;
 }
