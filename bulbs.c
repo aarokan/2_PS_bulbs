@@ -50,91 +50,91 @@ void print_bulb(int bit)
 int convertToBinary(decimal)
 {
     int binaryArray[8];
-    if (decimal > 128)
+    if (decimal >= 128)
     {
         binaryArray[7] = 1;
         printf("\nDecimal 128 = %i", decimal);
         decimal -= 128;
     }
-    else if (decimal <= 128)
+    else
     {
         binaryArray[7] = 0;
         printf("\nDecimal 128 = %i", decimal);
     }
 
-    if (decimal > 64)
+    if (decimal >= 64)
     {
         binaryArray[6] = 1;
         decimal -= 64;
         printf("\nDecimal 64 = %i", decimal);
     }
-    else if (decimal <= 64)
+    else
     {
         binaryArray[6] = 0;
         printf("\nDecimal 64 = %i", decimal);
     }
     
-    if (decimal > 32)
+    if (decimal >= 32)
     {
         binaryArray[5] = 1;
         printf("\nDecimal 32 = %i", decimal);
         decimal -= 32;
     }
-    else if (decimal <= 32)
+    else
     {
         binaryArray[5] = 0;
         printf("\nDecimal 32 = %i", decimal);
     }
     
-    if (decimal > 16)
+    if (decimal >= 16)
     {
         binaryArray[4] = 1;
         printf("\nDecimal 16 = %i", decimal);
         decimal -= 16;
     }
-    else if (decimal <= 16)
+    else
     {
         binaryArray[4] = 0;
         printf("\nDecimal 16 = %i", decimal);
     }
 
-    if (decimal > 8)
+    if (decimal >= 8)
     {
         binaryArray[3] = 1;
         printf("\nDecimal 8 = %i", decimal);
         decimal -= 8;
     }
-    else if (decimal <= 8)
+    else
     {
         binaryArray[3] = 0;
         printf("\nDecimal 8 = %i", decimal);
     }
     
-    if (decimal > 4)
+    if (decimal >= 4)
     {
         binaryArray[2] = 1;
         printf("\nDecimal 4 = %i", decimal);
         decimal -= 4;
     }
-    else if (decimal <= 4)
+    else
     {
         binaryArray[2] = 0;
         printf("\nDecimal 4 = %i", decimal);
     }
     
-    if (decimal > 2)
+    if (decimal >= 2)
     {
         binaryArray[1] = 1;
         printf("\nDecimal 2 = %i", decimal);
         decimal -= 2;
     }
-    else if (decimal <= 2)
+    else
     {
         binaryArray[1] = 0;
         printf("\nDecimal 2 = %i", decimal);
     }
     
-    if (decimal > 1)
+    if (decimal >= 1)
     {
         binaryArray[0] = 1;
         printf("\nDecimal 1 = %i", decimal);
