@@ -53,5 +53,24 @@ void print_bulb(int bit)
 
 void convertToBinary(decimal)
 {
-    printf("\nDecimal = %i", decimal);
+    int powerOfBinary = 1;
+    int currentBit = 7;
+    int remainder = 0;
+
+    while (decimal > 0)
+    {
+        remainder = decimal % 2;
+
+        // turn bit on or off based on remaindr
+        binaryArray[currentBit] = remainder;
+
+        // prepair for prceding bit by divison by 2 and subtracting remainder
+        decimal = decimal / 2 - remainder;
+
+        // move to preceding bit
+        currentBit -= 1;
+
+        // increase the power of the base-2 (1 2 4 .. etc)
+        powerOfBinary *= 2;
+    }
 }
