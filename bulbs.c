@@ -61,11 +61,18 @@ void convertToBinary(decimal)
     {
         remainder = decimal % 2;
 
+        printf("\n decimal = %i", decimal);
+        printf("\n reminder = %i", remainder);
+        printf("\n currentBit = %i", currentBit);
+        printf("\n powerOfBinary = %i", powerOfBinary);
+        printf("\n");
+        // prepair for prceding bit by divison by 2 and subtracting remainder
+        decimal -= remainder;
+        decimal /= 2;
+
         // turn bit on or off based on remaindr
         binaryArray[currentBit] = remainder;
 
-        // prepair for prceding bit by divison by 2 and subtracting remainder
-        decimal = decimal / 2 - remainder;
 
         // move to preceding bit
         currentBit -= 1;
